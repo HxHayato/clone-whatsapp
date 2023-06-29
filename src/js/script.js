@@ -38,7 +38,7 @@ mensagens.forEach((mensagem, indice) => {
 const inputChatBox = document.getElementById('chatboxInput');
 
 inputChatBox.addEventListener('keypress', (e)=>{
-  if(e.key == 'Enter'){
+  if(e.key == 'Enter' && inputChatBox.value.length != 0){
     const indiceConversa = Array.from(mensagens).findIndex(mensagem => mensagem.classList.contains('active'));
     const conversa = mensagens[indiceConversa];
     const mensagemEnviada = inputChatBox.value;
