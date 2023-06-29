@@ -8,8 +8,8 @@ export function EnviarMensagem(conversa, mensagemEnviada, indiceConversa) {
 
     //Criando a nova mensagem
     const data = new Date();
-    const hora = data.getHours();
-    const minutos = data.getMinutes();
+    const hora = data.getHours() >= 10 ? data.getHours() : `0${data.getHours()}`;
+    const minutos = data.getMinutes() >= 10 ? data.getMinutes() : `0${data.getMinutes()}`;
     const novaMensagem = {
       autor: 'eu',
       mensagem: mensagemEnviada,
