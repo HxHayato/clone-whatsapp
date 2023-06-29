@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="icon" type="image/png" href="./src/img/favicon.png" sizes="48x48">
+</head>
+<body>
+  <div class="container">
+    <div class="leftSide">
+      <!-- header -->
+      <div class="header">
+        <div class="userImg">
+          <img src="./src/img/user.jpg" alt="Foto de usuário" class="cover">
+        </div>
+        <ul class="nav_icons">
+          <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+          <li><ion-icon name="chatbox"></ion-icon></li>
+          <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+        </ul>
+      </div>
+
+      <!-- search -->
+      <div class="search-chat">
+        <div class="search-bar">
+          <ion-icon name="search-outline" class="icon"></ion-icon>
+          <input type="text" name="txtPesquisa" placeholder="Pesquisar ou começar uma nova conversa">
+        </div>
+        <button class="filter">
+          <ion-icon name="filter-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="chatlist" id="chatlist">
+        <div class="block active">
+          <div class="imgbx">
+            <img src="./src/img/img1.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Milena Santos</h4>
+              <div class="time">10:56</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img2.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Raul Lopez</h4>
+              <div class="time">02:34</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img3.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Julia Rodrigues</h4>
+              <div class="time">Ontem</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count">1</span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img4.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Luana</h4>
+              <div class="time">Ontem</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count">1</span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img5.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Sofia</h4>
+              <div class="time">15/06/2023</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img6.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Jennifer Oliveira</h4>
+              <div class="time">15/06/2023</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img7.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Tio Pedro</h4>
+              <div class="time">15/06/2023</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img8.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Marco Silva</h4>
+              <div class="time">15/06/2023</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="imgbx">
+            <img src="./src/img/img9.jpg" alt="Imagem de conversa com um usuário" class="cover">
+          </div>
+          <div class="details">
+            <div class="listHead">
+              <h4>Seu Jorge</h4>
+              <div class="time">15/06/2023</div>
+            </div>
+            <div class="container_message">
+              <div class="message">
+                <div class="status"></div>
+                <p></p>
+              </div>
+              <div class="right_message">
+                <span class="notification_count"></span>
+                <span class="menu_message">
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_chat">
+          <ion-icon name="lock-closed"></ion-icon>
+          <p>Suas mensagens pessoais são protegidas com a <span class="destaque">criptografia de ponta a ponta</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rightSide">
+      <div class="header">
+        <div class="imgText">
+          <div class="userImg">
+            <img src="./src/img/img1.jpg" alt="Foto de usuário" class="cover">
+          </div>
+          <h4>Milena Santos<br><span>online</span></h4>
+        </div>
+        <ul class="nav_icons">
+          <li><ion-icon name="search-outline"></ion-icon></li>
+          <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+        </ul>
+      </div>
+
+      <!-- chatbox -->
+      <div class="chatBox" id="chatBox">
+        <!-- 
+        <div class="message frnd_msg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sequi consectetur nesciunt.
+            <span>
+              10:30
+            </span>
+          </p>
+        </div>
+        <div class="message msg_continue frnd_msg">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sequi consectetur nesciunt.
+            <span>
+              10:30
+            </span>
+          </p>
+        </div>
+        <div class="message my_msg">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <span>
+              10:56
+              <ion-icon name="checkmark-done-outline" class="checked"></ion-icon>
+            </span>
+          </p>
+        </div>
+        -->
+      </div>
+
+      <!-- Chat input -->
+      <div class="chatbox_input">
+        <button id="emoji">
+          <ion-icon name="happy-outline"></ion-icon>
+        </button>
+        <button id="attach">
+          <ion-icon name="attach-outline"></ion-icon>
+        </button>
+        <input type="text" name="chatboxInput" id="chatboxInput" placeholder="Mensagem">
+        <button id="mic">
+          <ion-icon name="mic"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de tela mobile -->
+  <div class="container-modal-mobile">
+    <div class="modal">
+      <img src="./src/img/iconWarningMobile.svg" alt="Ícone de cuidado">
+      <h1>Cuidado!</h1>
+      <p>O site que você está tentando acessar foi projetado para se assemelhar ao WhatsApp Web, portanto, não está disponível para mobile no momento.</p>
+    </div>
+  </div>
+
+  <!-- Link dos ícones -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Link do(s) arquivo(s) JS -->
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+</html>
